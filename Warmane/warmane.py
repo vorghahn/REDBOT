@@ -27,7 +27,6 @@ import time
 import discord
 import redbot
 from redbot.core import commands
-# from . import checks
 import requests
 import json
 from bs4 import BeautifulSoup
@@ -228,10 +227,6 @@ qual_filter = {'Heirloom': 0, 'Trash': 0, 'Poor': 0, 'Uncommon': 1, 'Common': 2,
 
 
 class Warmane(commands.Cog):
-	"""
-	Do math
-	"""
-
 	__version__ = "1.0.1"
 
 	def __init__(self, bot):
