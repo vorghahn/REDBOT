@@ -9,7 +9,7 @@
         "Author 2"
     ],
     "required_cogs": {},
-    "requirements": ["beautifulsoup4"],
+    "requirements": ["beautifulsoup4","requests-html"],
     "tags": [
         "tag1",
         "tag2",
