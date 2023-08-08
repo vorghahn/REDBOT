@@ -947,17 +947,13 @@ class Warmane(commands.Cog):
 			json.dump(s, settng)
 		await ctx.send(embed=e)
         
-	@commands.command(aliases=["rr","joey"])
-	async def raidready(self, ctx, *, query):
+    @commands.command(aliases=["rr","joey"])
+    async def raidready(self, ctx, *, query):
         query.replace(",", "")    
         template = "https://raid-ready.pages.dev/?char={char}"
         url = template.format(char=query)
-        		e = discord.Embed(
-			color=await	ctx.embed_color(),
-		title = f"Click here for: `{query}`",
-				description = """Redirect to raid-ready.dev"""
-		, url = fmt_str)
-		await ctx.send(embed=e)
+        e = discord.Embed(color=await ctx.embed_color(), title = f"Click here for: `{query}`", description = """Redirect to raid-ready.dev""", url = fmt_str)
+        await ctx.send(embed=e)
 
 	# @checks.serverowner_or_permissions(administrator=True)
 	@commands.command(aliases=["clear"])
