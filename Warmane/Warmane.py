@@ -428,7 +428,7 @@ class Warmane(commands.Cog):
 	def rising_item_scrape(self, itemid, spell=False):
 		start = time.time()
 		print("Using web for %s." % itemid)
-		item_template = "https://wotlkdb.com/?item={0}"
+		item_template = "https://db.rising-gods.de/?item={0}"
 		url = item_template.format(itemid)
 		# print(url)
 		session = requests_html.HTMLSession()
