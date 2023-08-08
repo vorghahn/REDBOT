@@ -951,7 +951,7 @@ class Warmane(commands.Cog):
 	async def raidready(self, ctx, *, query):
 		query.replace(",", "")
 		template = "https://raid-ready.pages.dev/?char={char}"
-		url = template.format(char=query)
+		fmt_str = template.format(char=query)
 		e = discord.Embed(color=await ctx.embed_color(), title = f"Click here for: `{query}`", description = """Redirect to raid-ready.dev""", url = fmt_str)
 		await ctx.send(embed=e)
 
