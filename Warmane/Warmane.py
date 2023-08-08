@@ -947,7 +947,7 @@ class Warmane(commands.Cog):
 			json.dump(s, settng)
 		await ctx.send(embed=e)
         
- 	@commands.command(aliases=["rr","joey"])
+	@commands.command(aliases=["rr","joey"])
 	async def raidready(self, ctx, *, query):
         query.replace(",", "")    
         template = "https://raid-ready.pages.dev/?char={char}"
