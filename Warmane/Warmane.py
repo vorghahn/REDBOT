@@ -232,7 +232,7 @@ class Warmane(commands.Cog):
 	def __init__(self, bot):
 		self.bot = bot
 		self.big_dict = {}
-		self.data_dir = redbot.core.data_manager.cog_data_path(raw_name='warmane')
+		self.data_dir = redbot.core.data_manager.cog_data_path(raw_name='Warmane')
 		processed_dict = {}
 		with open(os.path.join(self.data_dir, 'items.json')) as settng:
 			processed_dict = json.load(settng)
